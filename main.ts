@@ -7,15 +7,23 @@ basic.showArrow(ArrowNames.North)
 while (true) {
     if (input.logoIsPressed()) {
         music.startMelody(music.builtInMelody(Melodies.Birthday), MelodyOptions.OnceInBackground)
-        basic.showString("A")
-        basic.showArrow(ArrowNames.West)
+        for (let index = 0; index < 3; index++) {
+            basic.showString("A")
+            basic.pause(100)
+            basic.showArrow(ArrowNames.West)
+            basic.pause(100)
+        }
     }
     if (input.buttonIsPressed(Button.A)) {
-        basic.showString(" Wann? - 22.01.2023 | 11:00 Uhr")
-        basic.pause(500)
-        basic.showArrow(ArrowNames.East)
+        basic.showString(" WANN? - 22.01.2023 | 11:00 UHR")
+        for (let index = 0; index < 3; index++) {
+            basic.showString("B")
+            basic.pause(100)
+            basic.showArrow(ArrowNames.East)
+            basic.pause(100)
+        }
     }
     if (input.buttonIsPressed(Button.B)) {
-        basic.showString(" Wo? - Wankstr. 4")
+        basic.showString(" WO? - WANKSTR. 4")
     }
 }
