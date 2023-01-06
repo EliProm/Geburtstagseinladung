@@ -7,6 +7,7 @@ basic.showArrow(ArrowNames.North)
 while (true) {
     if (input.logoIsPressed()) {
         music.startMelody(music.builtInMelody(Melodies.Birthday), MelodyOptions.OnceInBackground)
+        basic.showString("A")
         basic.showArrow(ArrowNames.West)
     }
     if (input.buttonIsPressed(Button.A)) {
